@@ -5,17 +5,19 @@
   right: 0;
   bottom: 0;
   perspective: 400;
+  overflow: hidden;
+  z-index: 1;
 }
 
 .plane {
-  width: 420px;
-  height: 420px;
+  width: 100vh;
+  height: 100vh;
   transform-style: preserve-3d;
 }
 .plane.main {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 75%;
   right: 0;
   bottom: 0;
   margin: auto;
@@ -24,8 +26,8 @@
           animation: rotate 20s infinite linear;
 }
 .plane.main .circle {
-  width: 420px;
-  height: 420px;
+  width: 100vh;
+  height: 100vh;
   position: absolute;
   transform-style: preserve-3d;
   border-radius: 100%;

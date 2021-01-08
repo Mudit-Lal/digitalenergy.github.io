@@ -63,21 +63,13 @@
   <style>
 
   @media only screen and (max-width: 768px) {
-        #titlish span {
-          font-size: 25px;
-        }
-  
-        #titlishunder span {
-          font-size: 15px;
-        }
-
         #section-hero .container {
           padding: 25vh 0px 25vh 0px;
         }
-
-        #section-testimonials .container {
-          zoom: 0.5;
+        .view {
+          display: none;
         }
+
       }
     @media only screen and (min-width: 768px) {
       #titlish span {
@@ -252,34 +244,35 @@
     <div id="content" class="no-bottom no-top">
 
       <!-- parallax section -->
-      <section id="section-hero" style="background-repeat:no-repeat;" class="full-height text-light" data-stellar-background-ratio=".2" data-bgimage="url(images-event/bg/background.jpg) bottom center fixed">
+      <section id="section-hero" style="background-image: linear-gradient(to left, #000000 , #333333);" class="full-height text-light" data-stellar-background-ratio=".2">
 
-        <div class="container text-center">
+        <div class="container">
           <div class="row center-y">
+            <div class="view">
+              <div class="plane main">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+            </div>
             <div class="col-md-12" style="background-size: auto;">
-                <div class="view">
-                  <div class="plane main">
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                  </div>
-                </div>
               <h3 style="padding-top:auto;">
-                <font id="titlish" style="padding-top: 15px; padding-bottom: 10px;background: -webkit-linear-gradient(#00A0B4, #007878); -webkit-background-clip: text;-webkit-text-fill-color: transparent;">
-                  <span>Reinventing Tech Education</span>
+                <font id="titlishunder" style="margin-bottom: 0; background: -webkit-linear-gradient(#00A0B4, #007878); -webkit-background-clip: text;-webkit-text-fill-color: transparent;">
+                  <span>Plaksha Global Conference on</span>
                 </font>
                 <br>
-                <font id="titlishunder" style="margin-bottom: 0; background: -webkit-linear-gradient(#00A0B4, #007878); -webkit-background-clip: text;-webkit-text-fill-color: transparent;">
-                  <span>Virtual Conference | 16 - 18 Oct, 2020</span>
+                <font id="titlish" style="padding-top: 15px; padding-bottom: 10px;background: -webkit-linear-gradient(#00A0B4, #007878); -webkit-background-clip: text;-webkit-text-fill-color: transparent;">
+                  <span>Digital Transformation in Energy</span>
                 </font>
               </h3>
             </div>
           </div>
         </div>
       </section>
+
 <!--      <section id="section-fun-facts" class="anigrad text-light greyback" style="padding:15vh 0 10vh 0;background:-webkit-linear-gradient(315deg,#000000,#191919, #333333);">
         <div class="container" style="margin-top:-7vh;margin-bottom:-7vh;">
           <div class="row">
