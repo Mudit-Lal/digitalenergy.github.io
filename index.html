@@ -154,9 +154,29 @@
         box-shadow: 0 0 -10px #FFFFFF;
       }
     }
+    @keyframes textglowing {
+      0% {
+        text-shadow: 0 0 -10px #FFFFFF;
+      }
+
+      40% {
+        text-shadow: 0 0 20px #FFFFFF;
+      }
+
+      60% {
+        text-shadow: 0 0 20px #FFFFFF;
+      }
+
+      100% {
+      text-shadow: 0 0 -10px #FFFFFF;
+      }
+    }
 
     .button-glow {
       animation: glowing 3000ms infinite;
+    }
+    .text-glow {
+      animation: textglowing 3000ms infinite;
     }
 
     .mbl-video {
@@ -232,9 +252,7 @@
       $(this).addClass('out');
       $('body').removeClass('modal-active');
       $('#myModal').modal('hide');
-      $('html, body').animate({
-        scrollTop: $("#section-register").offset().top
-      }, 2000);
+      window.open("https://us02web.zoom.us/webinar/register/WN_-iIfP0yuSNSI7pZ5jBdfmw");
     }
   </script>
 </head>
@@ -268,7 +286,7 @@
                   <li><a href="#section-about" style="color:#00A0B4;">About<span></span></a></li>
                   <li><a href="#section-speakers" style="color:#00A0B4;">Speakers<span></span></a></li>
                   <li><a href="#section-schedule" style="color:#00A0B4;">Schedule<span></span></a></li>
-                  <li><a href="#section-register" style="color:#00A0B4;">Register<span></span></a></li>
+                  <li><a href="https://us02web.zoom.us/webinar/register/WN_-iIfP0yuSNSI7pZ5jBdfmw" style="color:#FFFFFF;" class="text-glow">Register<span></span></a></li>
                 </b>
               </ul>
             </nav>
@@ -356,6 +374,17 @@
         </div>
       </section>-->
 
+              <section id="section-countdown" aria-label="section" class="gradient-to-right pt40 pb40">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                      <div class="spacer-single"></div>
+                      <div id="defaultCountdown"></div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- section begin-->
       <section id="section-about" data-bgimage="url(images-event/bg/4.jpg) top left no-repeat">
         <div class="wm wm-border light wow fadeInDown"><img src="images-event/infinityn.svg" style="position:absolute; max-width:20%; left: 40%; right: auto; margin: auto;"></div>
         <div class="container">
@@ -1709,8 +1738,7 @@
 
           <!-- Modal footer -->
           <div class="modal-footer" style="margin-top: 0; border: 0; padding-top: 5px;">
-            <button onclick="popupclose();" href="#section-register" class="scroll-to btn"
-              style="font-family: 'Open Sans'; opacity: 1; padding: 8px 20px 8px 20px; background: #007878; color: #ffffff; margin: auto; display: inline-block; letter-spacing: 3px; font-size: 14px; font-weight: normal; line-height: 1.428571429; text-align: center; white-space: nowrap; vertical-align: middle; cursor: pointer; border: 1px solid transparent; border-radius: 0px;">
+            <button onclick="popupclose();" href="https://us02web.zoom.us/webinar/register/WN_-iIfP0yuSNSI7pZ5jBdfmw" class="btn" style="font-family: 'Open Sans'; opacity: 1; padding: 8px 20px 8px 20px; background: #007878; color: #ffffff; margin: auto; display: inline-block; letter-spacing: 3px; font-size: 14px; font-weight: normal; line-height: 1.428571429; text-align: center; white-space: nowrap; vertical-align: middle; cursor: pointer; border: 1px solid transparent; border-radius: 0px;">
               REGISTER NOW
             </button>
           </div>
@@ -1763,7 +1791,7 @@
                                                             <img src="images-event/team/1.jpg" class="img-circle" alt="">
                                                         </div>
                                                         <div class="sc-name" style="background-size: cover;">
-                                                            <h4>JManas Fuloria</h4>
+                                                            <h4>Manas Fuloria</h4>
                                                             <span>Founder and Trustee, Plaksha</span>
                                                         </div>
                                                         <div class="sc-info" style="background-size: cover;">
@@ -1961,22 +1989,11 @@
     <!--section close -->
     <!-- section close -->
 
-    <section id="section-countdown" aria-label="section" class="gradient-to-right pt40 pb40">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-10 offset-md-1">
-            <div class="spacer-single"></div>
-            <div id="defaultCountdown"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- section begin-->
     <script type="text/javascript">
       var submitted = false;
     </script>
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='thankyou.html';}"></iframe>
-    <!-- section begin -->
+    <!-- section begin
     <section id="section-register" class="text-light" data-bgcolor="#222222" onmousemove="hidebutton()" ontouchstart="hidebutton()" style="z-index:205;">
       <div class="wm wm-border dark wow fadeInDown"><img src="images-event/infinityngrey.svg" style="position:absolute; max-width:20%; left: 40%; right: auto; margin: auto;"></div>
       <div class="container">
@@ -2125,7 +2142,7 @@
   </div>
   </div>
 
-  </section>
+</section> -->
 
   <section id="call-to-action" class="text-light call-to-action" style="background:-webkit-linear-gradient(315deg,#7289DA,#3997c7, #00A4B4);" aria-label="cta" style="background-size: cover;" onmousemove="showbutton()" ontouchstart="showbutton()">
     <div class="container" style="background-size: cover;">
