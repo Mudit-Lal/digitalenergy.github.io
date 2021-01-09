@@ -237,8 +237,8 @@
       transform: translate(-50%, -50%);
       font-size: 65px;
       color: rgba(255, 255, 255, 0.9);
-      transition: 0.5s;
-    }
+      transition: 0.5s; }
+
   </style>
 
   <script>
@@ -327,6 +327,10 @@
                 <br>
                 <font id="titlish" style="padding-top: 15px; padding-bottom: 10px;background: -webkit-linear-gradient(#00A0B4, #007878); -webkit-background-clip: text;-webkit-text-fill-color: transparent;">
                   <span>Digital Transformation in Energy</span>
+                </font>
+                <br>
+                <font id="titlishunder" style="margin-bottom: 0; background: -webkit-linear-gradient(#00A0B4, #007878); -webkit-background-clip: text;-webkit-text-fill-color: transparent;">
+                  <span>28 Jan, 2020 | 3:30 PM</span>
                 </font>
               </h3>
             </div>
@@ -925,7 +929,10 @@
                 <div id="tab1" class="tab_single_content" style="background-size: cover; display: block;">
                                         <div class="row" style="background-size: cover;">
                                             <div class="col-md-12" style="background-size: cover;">
+
                                                 <div class="schedule-listing" style="background-size: cover;">
+                                                  <h1 style="color: #333333; text-align: left;">Opening Session</h1>
+                                                  <hr>
                                                     <div class="schedule-item" style="background-size: cover;">
                                                         <div class="sc-time" style="background-size: cover;">03:30 – 03:40 PM IST</div>
                                                         <div class="sc-pic" style="background-size: cover;">
@@ -963,6 +970,8 @@
 
                                                 <div class="schedule-listing" style="background-size: cover;">
                                                     <div class="schedule-item" style="background-size: cover;">
+                                                      <h1 style="color: #333333; text-align: left;">Stories of Change</h1>
+                                                      <hr>
                                                         <div class="sc-time" style="background-size: cover;">04:00 – 04:20 PM IST</div>
                                                         <div class="sc-pic" style="background-size: cover;">
                                                             <img src="images-event/team/3.jpg" class="img-circle" alt="">
@@ -1012,8 +1021,11 @@
                                                         </div>
                                                         <div class="clearfix" style="background-size: cover;"></div>
                                                     </div>
-                                                </div><div class="schedule-listing" style="background-size: cover;">
+                                                </div>
+                                                <div class="schedule-listing" style="background-size: cover;">
                                                     <div class="schedule-item" style="background-size: cover;">
+                                                      <h1 style="color: #333333; text-align: left;">Digital Technology in Global Energy Transition</h1>
+                                                      <hr>
                                                         <div class="sc-time" style="background-size: cover;">05:10 – 06:00 PM IST</div>
                                                         <div class="sc-pic" style="background-size: cover;">
                                                             <img src="images-event/team/4.jpg" class="img-circle" alt="">
@@ -1336,8 +1348,8 @@
         </div>
 
         <div class="col-md-6">
-          &copy; Copyright 2020 | <span style="color:#00A0B4;">Plaksha <i class="fas fa-infinity" style="color:#00A0B4;"></i> Infinity </span><br>
-          <b>Write to us at </b><a href="mailto:infinity@plaksha.org" style="color:#00A0B4;">infinity@plaksha.org</a><br>
+          &copy; Copyright 2020 | <span style="color:#00A0B4;">Plaksha <i class="fas fa-atom"></i> Center for Clean Energy </span><br>
+          <b>Write to us at </b><a href="mailto:clean.energy@plaksha.org" style="color:#00A0B4;">clean.energy@plaksha.org</a><br>
           <b><a target="_blank" href="https://drive.google.com/file/d/1nul41zUtcR8H-PY38bQEp6LlyvCOrxh8/view?usp=sharing" style="color:#00A0B4; font-size:0.8em;">Privacy Policy</a></b>
         </div>
 
@@ -1352,7 +1364,7 @@
       </div>
     </div>
 
-    <a href="#section-register" id="register-click" class="custom-1"><b style="color:white;z-index:200;">REGISTER NOW</b></a>
+    <a href="https://us02web.zoom.us/webinar/register/WN_-iIfP0yuSNSI7pZ5jBdfmw" target="_blank" id="register-click" class="custom-1"><b style="color:white;z-index:200;" onclick="registerclick();">REGISTER NOW</b></a>
   </footer>
   <!-- footer close -->
   </div>
@@ -1446,7 +1458,9 @@
     function viewbook() {
       document.getElementById('flipbook').style.display = 'block';
     }
-
+    function registerclick(){
+      window.open('https://us02web.zoom.us/webinar/register/WN_-iIfP0yuSNSI7pZ5jBdfmw', '_blank');
+    }
     function multipleregister() {
       document.getElementById('submitbutton').style.display = 'none';
       setTimeout(function(){document.getElementById('submitbutton').style.display = 'inline';}, 4000);
