@@ -59,7 +59,17 @@
   <link rel="stylesheet" href="css/font-style.css" type="text/css">
 
   <script src="https://kit.fontawesome.com/7541e5dd78.js" crossorigin="anonymous"></script>
-
+  <script>
+  var window_weight = $(window).width();
+  if (window_weight <= 768) {
+  $(document).ready(function(){
+      $("#maintext").addClass("col-md-12 text-center");
+    });}
+    if (window_weight >= 768) {
+    $(document).ready(function(){
+        $("#maintext").addClass("col-md-12");
+      });}
+  </script>
   <style>
 
   @media only screen and (max-width: 768px) {
@@ -74,20 +84,25 @@
     @media only screen and (min-width: 768px) {
       #titlish span {
         font-size: 40px;
+        text-align: center;
       }
 
       #titlishunder span {
         font-size: 25px;
+        text-align: center;
       }
     }
 
     @media only screen and (max-width: 320px) {
       #titlish span {
         font-size: 20px;
+        text-align: center;
       }
+
 
       #titlishunder span {
         font-size: 15px;
+        text-align: center;
       }
     }
 
@@ -246,7 +261,7 @@
       <!-- parallax section -->
       <section id="section-hero" style="background-image: linear-gradient(to left, #000000 , #333333);" class="full-height text-light" data-stellar-background-ratio=".2">
 
-        <div class="container">
+        <div class="container" id="landing">
           <div class="row center-y">
             <div class="view">
               <div class="plane main">
@@ -258,7 +273,8 @@
                 <div class="circle"></div>
               </div>
             </div>
-            <div class="col-md-12" style="background-size: auto;">
+            <div id="maintext">
+            <div class="col-md-12" style="background-size: auto;" onload="ctext();">
               <h3 style="padding-top:auto;">
                 <font id="titlishunder" style="margin-bottom: 0; background: -webkit-linear-gradient(#00A0B4, #007878); -webkit-background-clip: text;-webkit-text-fill-color: transparent;">
                   <span>Plaksha Global Conference on</span>
@@ -269,6 +285,7 @@
                 </font>
               </h3>
             </div>
+          </div>
           </div>
         </div>
       </section>
@@ -1700,7 +1717,7 @@
 
           <div class="col-md-12">
             <div class="de_tab tab_style_4 text-center">
-              <ul class="de_nav de_nav_dark">
+              <!--<ul class="de_nav de_nav_dark">
                 <li class="active" data-link="#section-services-tab">
                   <h3>Track 01</h3>
                   <h4 style="padding-top:5px;">Oct 16 | 5:30 PM to 8:30 PM (IST)</h4>
@@ -1717,31 +1734,137 @@
                   <h3>Track 04</h3>
                   <h4 style="padding-top:5px;">Oct 18 | 5:30 PM to 8:00 PM (IST)</h4>
                 </li>
-              </ul>
+              </ul> -->
 
               <div class="de_tab_content text-left">
 
-                <div id="tab1" class="tab_single_content">
-                  <section class="gradient-to-right text-light rounded" style="padding:40px 0 40px 0;">
-                    <div class="container">
-                      <div class="row align-items-center">
-                        <div class="col-lg-12 text-center">
-                          <h1 class="size-2 no-margin"><i class="fas fa-chalkboard-teacher" style="font-size:130%"></i><br>Future of Tech Education</h2>
-                        </div>
-                        <div class="col-md-6 offset-md-3 text-center">
-                          <h4 style="padding-top:5px;">Oct 16 | 5:30 PM to 8:30 PM (IST)</h4>
-                        </div>
-                        <div class="spacer-single"></div>
-                        <div class="col-md-6 offset-md-3 text-center">
-                          <h4 style="font-weight:normal; font-size:1em;">
-                            Eminent academicians discuss why we need a new approach to tech education and the current global best practices in the field. Especially useful for those who are tirelessly working to make the world a better place and are
-                            curious to learn how reinventing tech education can support their endeavours.
-                          </h4>
-                        </div>
-                      </div>
-                    </div>
-                  </section>
-                </div>
+                <div id="tab1" class="tab_single_content" style="background-size: cover; display: block;">
+                                        <div class="row" style="background-size: cover;">
+                                            <div class="col-md-12" style="background-size: cover;">
+                                                <div class="schedule-listing" style="background-size: cover;">
+                                                    <div class="schedule-item" style="background-size: cover;">
+                                                        <div class="sc-time" style="background-size: cover;">03:30 – 03:40 PM IST</div>
+                                                        <div class="sc-pic" style="background-size: cover;">
+                                                            <img src="images-event/team/1.jpg" class="img-circle" alt="">
+                                                        </div>
+                                                        <div class="sc-name" style="background-size: cover;">
+                                                            <h4>JManas Fuloria</h4>
+                                                            <span>Founder and Trustee, Plaksha</span>
+                                                        </div>
+                                                        <div class="sc-info" style="background-size: cover;">
+                                                            <h3>Introductory Remark</h3>
+                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
+                                                        </div>
+                                                        <div class="clearfix" style="background-size: cover;"></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="schedule-listing" style="background-size: cover;">
+                                                    <div class="schedule-item" style="background-size: cover;">
+                                                        <div class="sc-time" style="background-size: cover;">03:40 – 04:00 PM IST</div>
+                                                        <div class="sc-pic" style="background-size: cover;">
+                                                            <img src="images-event/team/2.jpg" class="img-circle" alt="">
+                                                        </div>
+                                                        <div class="sc-name" style="background-size: cover;">
+                                                            <h4>Gauri Singh</h4>
+                                                            <span>Deputy Director-General, IRENA</span>
+                                                        </div>
+                                                        <div class="sc-info" style="background-size: cover;">
+                                                            <h3>Keynote Address</h3>
+                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
+                                                        </div>
+                                                        <div class="clearfix" style="background-size: cover;"></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="schedule-listing" style="background-size: cover;">
+                                                    <div class="schedule-item" style="background-size: cover;">
+                                                        <div class="sc-time" style="background-size: cover;">04:00 – 04:20 PM IST</div>
+                                                        <div class="sc-pic" style="background-size: cover;">
+                                                            <img src="images-event/team/3.jpg" class="img-circle" alt="">
+                                                        </div>
+                                                        <div class="sc-name" style="background-size: cover;">
+                                                            <h4>Harish Hande</h4>
+                                                            <span>Founder &amp; Chairman, SELCO India</span>
+                                                        </div>
+                                                        <div class="sc-info" style="background-size: cover;">
+                                                            <h3>Building Rural India through Solar Energy </h3>
+                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
+                                                        </div>
+                                                        <div class="clearfix" style="background-size: cover;"></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="schedule-listing" style="background-size: cover;">
+                                                    <div class="schedule-item" style="background-size: cover;">
+                                                        <div class="sc-time" style="background-size: cover;">04:20 – 04:40 PM IST</div>
+                                                        <div class="sc-pic" style="background-size: cover;">
+                                                            <img src="images-event/team/4.jpg" class="img-circle" alt="">
+                                                        </div>
+                                                        <div class="sc-name" style="background-size: cover;">
+                                                            <h4>Amit Gupta</h4>
+                                                            <span>Co-Founder &amp; CEO, Yulu</span>
+                                                        </div>
+                                                        <div class="sc-info" style="background-size: cover;">
+                                                            <h3>Making India an EV Hub</h3>
+                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
+                                                        </div>
+                                                        <div class="clearfix" style="background-size: cover;"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="schedule-listing" style="background-size: cover;">
+                                                    <div class="schedule-item" style="background-size: cover;">
+                                                        <div class="sc-time" style="background-size: cover;">04:40 – 05:00 PM IST</div>
+                                                        <div class="sc-pic" style="background-size: cover;">
+                                                            <img src="images-event/team/4.jpg" class="img-circle" alt="">
+                                                        </div>
+                                                        <div class="sc-name" style="background-size: cover;">
+                                                            <h4>Multiple Speakers</h4>
+                                                            <span>Moderated by <b>Shalini Sarin</b></span>
+                                                        </div>
+                                                        <div class="sc-info" style="background-size: cover;">
+                                                            <h3>Fireside Chat</h3>
+                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
+                                                        </div>
+                                                        <div class="clearfix" style="background-size: cover;"></div>
+                                                    </div>
+                                                </div><div class="schedule-listing" style="background-size: cover;">
+                                                    <div class="schedule-item" style="background-size: cover;">
+                                                        <div class="sc-time" style="background-size: cover;">05:10 – 06:00 PM IST</div>
+                                                        <div class="sc-pic" style="background-size: cover;">
+                                                            <img src="images-event/team/4.jpg" class="img-circle" alt="">
+                                                        </div>
+                                                        <div class="sc-name" style="background-size: cover;">
+                                                            <h4>Multiple Speakers</h4>
+                                                            <span>Moderated by Devarajan Srinivasan<br>CTO, Poundra</span>
+                                                        </div>
+                                                        <div class="sc-info" style="background-size: cover;">
+                                                            <h3>Panel Discussion</h3>
+                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
+                                                        </div>
+                                                        <div class="clearfix" style="background-size: cover;"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="schedule-listing" style="background-size: cover;">
+                                                    <div class="schedule-item" style="background-size: cover;">
+                                                        <div class="sc-time" style="background-size: cover;">06:00 – 06:30 PM IST</div>
+                                                        <div class="sc-pic" style="background-size: cover;">
+                                                            <img src="images-event/team/4.jpg" class="img-circle" alt="">
+                                                        </div>
+                                                        <div class="sc-name" style="background-size: cover;">
+                                                            <h4>Devarajan Srinivasan</h4>
+                                                            <span>CTO, Poundra</span>
+                                                        </div>
+                                                        <div class="sc-info" style="background-size: cover;">
+                                                            <h3>Q&A Session </h3>
+                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
+                                                        </div>
+                                                        <div class="clearfix" style="background-size: cover;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
                 <div id="tab2" class="tab_single_content">
                   <section class="gradient-to-right text-light rounded" style="padding:40px 0 40px 0;">
@@ -2088,6 +2211,13 @@
   <script>
     function hidebutton() {
       document.getElementById('register-click').style.visibility = "hidden";
+    }
+    function ctext() {
+   var window_weight = $(window).width();
+   if (window_weight <= 768) {
+             document.getElementById('maintext').style.textAlign = 'center';
+             $('maintext').addClass("text-center");
+   }
     }
 
     function showbutton() {
