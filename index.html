@@ -76,8 +76,35 @@
         #section-hero .container {
           padding: 25vh 0px 25vh 0px;
         }
-        .view {
-          display: none;
+
+        #maintext .col-md-12 {
+          padding-top: 10vh;
+        }
+
+        .plane.main {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 25%;
+          margin: auto;
+          transform: rotateX(60deg) rotateZ(-30deg);
+          -webkit-animation: rotate 20s infinite linear;
+                  animation: rotate 20s infinite linear;
+        }
+        .plane.main .circle {
+          width: 20vh;
+          height: 20vh;
+          position: absolute;
+          transform-style: preserve-3d;
+          border-radius: 100%;
+          box-sizing: border-box;
+          box-shadow: 0 0 60px rgba(0,115,80, 1), inset 0 0 60px rgba(173,212,133, 1);
+        }
+        .plane {
+          width: 20vh;
+          height: 20vh;
+          transform-style: preserve-3d;
         }
 
       }
@@ -273,7 +300,7 @@
                 <div class="circle"></div>
               </div>
             </div>
-            <div id="maintext">
+            <div id="maintext" class="maintexting">
             <div class="col-md-12" style="background-size: auto;" onload="ctext();">
               <h3 style="padding-top:auto;">
                 <font id="titlishunder" style="margin-bottom: 0; background: -webkit-linear-gradient(#00A0B4, #007878); -webkit-background-clip: text;-webkit-text-fill-color: transparent;">
