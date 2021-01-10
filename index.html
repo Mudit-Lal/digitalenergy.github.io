@@ -76,7 +76,7 @@
 
   @media only screen and (max-width: 768px) {
         #section-hero .container {
-          padding: 25vh 0px 25vh 0px;
+          padding: 25vh 0px 5vh 0px;
         }
 
         #maintext .col-md-12 {
@@ -158,6 +158,23 @@
     }
     @keyframes textglowing {
       0% {
+        text-shadow: 0 0 10px #FFFFFF;
+      }
+
+      40% {
+        text-shadow:0 0 -20px #FFFFFF;
+      }
+
+      60% {
+        text-shadow: 0 0 -20px #FFFFFF;
+      }
+
+      100% {
+      text-shadow: 0 0 10px #FFFFFF;
+      }
+    }
+    @keyframes textpop {
+      0% {
         text-shadow: 0 0 0px #FFFFFF;
       }
 
@@ -166,7 +183,7 @@
       }
 
       60% {
-        text-shadow: 5px 5px 0px #FFFFFF;
+        text-shadow: 5px 0px 0px #FFFFFF;
       }
 
       100% {
@@ -179,6 +196,9 @@
     }
     .text-glow {
       animation: textglowing 3000ms infinite;
+    }
+    .text-pop {
+      animation: textpop 3000ms infinite;
     }
 
     .mbl-video {
@@ -329,7 +349,7 @@
                 </font>
                 <br>
                 <font id="titlish" style="padding-top: 15px; padding-bottom: 10px;background: -webkit-linear-gradient(#00A0B4, #007878); -webkit-background-clip: text;-webkit-text-fill-color: transparent;">
-                  <span class="text-glow">Digital Transformation in Energy</span>
+                  <span class="text-pop">Digital Transformation in Energy</span>
                 </font>
                 <br>
                 <font id="titlishunder" style="margin-bottom: 0; background: -webkit-linear-gradient(#00A0B4, #007878); -webkit-background-clip: text;-webkit-text-fill-color: transparent;">
