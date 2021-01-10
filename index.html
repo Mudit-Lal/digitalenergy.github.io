@@ -65,11 +65,13 @@
   $(document).ready(function(){
       $("#maintext").addClass("col-md-12 text-center");
       document.getElementById('titlish').style.fontSize = '1.5em';
+      document.getElementById('icontop').style.diplay = 'none';
     });}
     if (window_weight >= 768) {
     $(document).ready(function(){
         $("#maintext").addClass("col-md-12");
         document.getElementById('titlish').style.fontSize = '3em';
+        document.getElementById('icontop').style.diplay = 'visible';
       });}
   </script>
   <style>
@@ -79,6 +81,10 @@
           padding: 25vh 0px 25vh 0px;
         }
 
+        .nametag {
+          display: none;
+          opacity: 0;
+        }
         #maintext .col-md-12 {
           padding-top: 10vh;
         }
@@ -240,7 +246,39 @@
       font-size: 65px;
       color: rgba(255, 255, 255, 0.9);
       transition: 0.5s; }
+      .nametag{
+        position: absolute;
+        margin-bottom: 0;
+        background: -webkit-linear-gradient(#00A0B4, #007878);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 4em;
+      }
 
+      .nametag:nth-child(1){
+        animation-name: fade;
+        animation-fill-mode: both;
+        animation-iteration-count: infinite;
+        animation-duration: 5s;
+        animation-direction: alternate-reverse;
+      }
+
+      .nametag:nth-child(2){
+        animation-name: fade;
+        animation-fill-mode: both;
+        animation-iteration-count: infinite;
+        animation-duration: 5s;
+        animation-direction: alternate;
+      }
+
+      @keyframes fade{
+          0%,45% {
+            opacity: 0;
+      }
+          100%{
+            opacity: 1;
+        }
+      }
   </style>
 
   <script>
@@ -323,6 +361,13 @@
             <div id="maintext" class="maintexting">
             <div class="col-md-12" style="background-size: auto;" onload="ctext();">
               <h3 style="padding-top:auto;">
+                <div>
+                  <span id="titlishunder">
+                  <i class="fa fa-sun nametag" id="icontop"></i>
+                  <i class="fa fa-leaf nametag" id="icontop"></i>
+                </span>
+              </div>
+              <br><br><br><br>
                 <font id="titlishunder" style="margin-bottom: 0; background: -webkit-linear-gradient(#00A0B4, #007878); -webkit-background-clip: text;-webkit-text-fill-color: transparent;">
                   <span>Plaksha Global Conference on</span>
                 </font>
@@ -629,7 +674,7 @@
                             CTO, Poundra
                           </h4>
                         </div>
-                        <img src="images-event/team/stock.jpg" class="img-responsive" alt="" />
+                        <img src="images-event/team/Devarajan Srinivasan.jpg" class="img-responsive" alt="" />
                       </div>
                       <div class="team-desc" style="z-index:6;">
                         <h3>Devarajan Srinivasan</h3>
