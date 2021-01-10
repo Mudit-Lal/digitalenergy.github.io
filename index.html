@@ -57,6 +57,7 @@
 
   <!-- custom font -->
   <link rel="stylesheet" href="css/font-style.css" type="text/css">
+  <link rel="stylesheet" href="css/slideshow.css" type="text/css">
 
   <script src="https://kit.fontawesome.com/7541e5dd78.js" crossorigin="anonymous"></script>
   <script>
@@ -326,11 +327,14 @@
     <div id="content" class="no-bottom no-top">
 
       <!-- parallax section -->
-      <img src="images-event/bg/icons.png" style="position:absolute; height: 40%; bottom: 0; opacity: 0.5;" alt="">
+
+      <img src="images-event/logo.gif" alt="" style="position: absolute; z-index: 1; opacity:0.2; top: 30%; width: 20%; left: -5%">
       <section id="section-hero" style="background-image: linear-gradient(to left, #000000 , #333333);" class="full-height text-light" data-stellar-background-ratio=".2">
 
         <div class="container" id="landing">
+
           <div class="row center-y">
+
             <div class="view">
               <div class="plane main">
                 <div class="circle"></div>
@@ -342,7 +346,7 @@
               </div>
             </div>
             <div id="maintext" class="maintexting">
-            <div class="col-md-12" style="background-size: auto;" onload="ctext();">
+            <div class="col-md-12" style="background-size: auto; z-index: 2;" onload="ctext();">
               <h3 style="padding-top:auto;">
                 <font id="titlishunder" style="margin-bottom: 0; background: -webkit-linear-gradient(#00A0B4, #007878); -webkit-background-clip: text;-webkit-text-fill-color: transparent;">
                   <span>Plaksha Global Conference on</span>
@@ -353,7 +357,7 @@
                 </font>
                 <br>
                 <font id="titlishunder" style="margin-bottom: 0; background: -webkit-linear-gradient(#00A0B4, #007878); -webkit-background-clip: text;-webkit-text-fill-color: transparent;">
-                  <span>28 Jan, 2020 | 3:30 PM</span>
+                  <span>28 Jan, 2021 | 3:30 PM</span>
                 </font>
               </h3>
             </div>
@@ -1351,7 +1355,7 @@
         </div>
 
         <div class="col-md-6">
-          &copy; Copyright 2020 | <span style="color:#00A0B4;">Plaksha <i class="fas fa-atom"></i> Center for Clean Energy </span><br>
+          &copy; Copyright 2021 | <span style="color:#00A0B4;">Plaksha <i class="fas fa-atom"></i> Center for Clean Energy </span><br>
           <b>Write to us at </b><a href="mailto:clean.energy@plaksha.org" style="color:#00A0B4;">clean.energy@plaksha.org</a><br>
           <b><a target="_blank" href="https://drive.google.com/file/d/1nul41zUtcR8H-PY38bQEp6LlyvCOrxh8/view?usp=sharing" style="color:#00A0B4; font-size:0.8em;">Privacy Policy</a></b>
         </div>
@@ -1397,6 +1401,7 @@
   <script src="js/countdown-custom.js"></script>
   <script src="js/jquery.twentytwenty.js"></script>
   <script src="js/circle.js"></script>
+  <script src="js/slideshow.js"></script>
   <script>
     function hidebutton() {
       document.getElementById('register-click').style.visibility = "hidden";
@@ -1469,6 +1474,22 @@
       setTimeout(function(){document.getElementById('submitbutton').style.display = 'inline';}, 4000);
     }
 
+  </script>
+  <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 3000); // Change image every 2 seconds
+    }
   </script>
 
   <script>
