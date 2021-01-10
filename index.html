@@ -61,56 +61,60 @@
 
   <script src="https://kit.fontawesome.com/7541e5dd78.js" crossorigin="anonymous"></script>
   <script>
-  var window_weight = $(window).width();
-  if (window_weight <= 768) {
-  $(document).ready(function(){
-      $("#maintext").addClass("col-md-12 text-center");
-      document.getElementById('titlish').style.fontSize = '1.5em';
-    });}
+    var window_weight = $(window).width();
+    if (window_weight <= 768) {
+      $(document).ready(function() {
+        $("#maintext").addClass("col-md-12 text-center");
+        document.getElementById('titlish').style.fontSize = '1.5em';
+      });
+    }
     if (window_weight >= 768) {
-    $(document).ready(function(){
+      $(document).ready(function() {
         $("#maintext").addClass("col-md-12");
         document.getElementById('titlish').style.fontSize = '3em';
-      });}
+      });
+    }
   </script>
   <style>
-
-  @media only screen and (max-width: 768px) {
-        #section-hero .container {
-          padding: 25vh 0px 10vh 0px;
-        }
-
-        #maintext .col-md-12 {
-          padding-top: 10vh;
-        }
-
-        .plane.main {
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 25%;
-          margin: auto;
-          transform: rotateX(60deg) rotateZ(-30deg);
-          -webkit-animation: rotate 20s infinite linear;
-                  animation: rotate 20s infinite linear;
-        }
-        .plane.main .circle {
-          width: 20vh;
-          height: 20vh;
-          position: absolute;
-          transform-style: preserve-3d;
-          border-radius: 100%;
-          box-sizing: border-box;
-          box-shadow: 0 0 60px rgba(0,115,80, 1), inset 0 0 60px rgba(173,212,133, 1);
-        }
-        .plane {
-          width: 20vh;
-          height: 20vh;
-          transform-style: preserve-3d;
-        }
-
+    @media only screen and (max-width: 768px) {
+      #section-hero .container {
+        padding: 25vh 0px 10vh 0px;
       }
+
+      #maintext .col-md-12 {
+        padding-top: 10vh;
+      }
+
+      .plane.main {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 25%;
+        margin: auto;
+        transform: rotateX(60deg) rotateZ(-30deg);
+        -webkit-animation: rotate 20s infinite linear;
+        animation: rotate 20s infinite linear;
+      }
+
+      .plane.main .circle {
+        width: 20vh;
+        height: 20vh;
+        position: absolute;
+        transform-style: preserve-3d;
+        border-radius: 100%;
+        box-sizing: border-box;
+        box-shadow: 0 0 60px rgba(0, 115, 80, 1), inset 0 0 60px rgba(173, 212, 133, 1);
+      }
+
+      .plane {
+        width: 20vh;
+        height: 20vh;
+        transform-style: preserve-3d;
+      }
+
+    }
+
     @media only screen and (min-width: 768px) {
       #titlish h3 {
         font-size: 40px !important;
@@ -121,7 +125,8 @@
         font-size: 25px;
         text-align: center;
       }
-      .loopvideo img{
+
+      .loopvideo img {
         top: 30%;
         width: 20%;
         left: 30%;
@@ -162,13 +167,14 @@
         box-shadow: 0 0 -10px #FFFFFF;
       }
     }
+
     @keyframes textglowing {
       0% {
         text-shadow: 0 0 10px #FFFFFF;
       }
 
       40% {
-        text-shadow:0 0 -20px #FFFFFF;
+        text-shadow: 0 0 -20px #FFFFFF;
       }
 
       60% {
@@ -176,9 +182,10 @@
       }
 
       100% {
-      text-shadow: 0 0 10px #FFFFFF;
+        text-shadow: 0 0 10px #FFFFFF;
       }
     }
+
     @keyframes textpop {
       0% {
         text-shadow: 0 0 0px #FFFFFF;
@@ -193,16 +200,18 @@
       }
 
       100% {
-      text-shadow: 0 0 0px #FFFFFF;
+        text-shadow: 0 0 0px #FFFFFF;
       }
     }
 
     .button-glow {
       animation: glowing 3000ms infinite;
     }
+
     .text-glow {
       animation: textglowing 3000ms infinite;
     }
+
     .text-pop {
       animation: textpop 3000ms infinite;
     }
@@ -265,8 +274,8 @@
       transform: translate(-50%, -50%);
       font-size: 65px;
       color: rgba(255, 255, 255, 0.9);
-      transition: 0.5s; }
-
+      transition: 0.5s;
+    }
   </style>
 
   <script>
@@ -351,27 +360,27 @@
               </div>
             </div>
             <div id="maintext" class="maintexting">
-            <div class="col-md-12" style="background-size: auto; z-index: 2;" onload="ctext();">
-              <h3 style="padding-top:auto;">
-                <font id="titlishunder" style="margin-bottom: 0; background: -webkit-linear-gradient(#00A0B4, #007878); -webkit-background-clip: text;-webkit-text-fill-color: transparent;">
-                  <span>Plaksha Global Conference on</span>
-                </font>
-                <br>
-                <font id="titlish" style="padding-top: 15px; padding-bottom: 10px;background: -webkit-linear-gradient(#00A0B4, #007878); -webkit-background-clip: text;-webkit-text-fill-color: transparent;">
-                  <span class="text-pop">Digital Transformation in Energy</span>
-                </font>
-                <br>
-                <font id="titlishunder" style="margin-bottom: 0; background: -webkit-linear-gradient(#00A0B4, #007878); -webkit-background-clip: text;-webkit-text-fill-color: transparent;">
-                  <span>28 Jan, 2021 | 3:30 PM</span>
-                </font>
-              </h3>
+              <div class="col-md-12" style="background-size: auto; z-index: 2;" onload="ctext();">
+                <h3 style="padding-top:auto;">
+                  <font id="titlishunder" style="margin-bottom: 0; background: -webkit-linear-gradient(#00A0B4, #007878); -webkit-background-clip: text;-webkit-text-fill-color: transparent;">
+                    <span>Plaksha Global Conference on</span>
+                  </font>
+                  <br>
+                  <font id="titlish" style="padding-top: 15px; padding-bottom: 10px;background: -webkit-linear-gradient(#00A0B4, #007878); -webkit-background-clip: text;-webkit-text-fill-color: transparent;">
+                    <span class="text-pop">Digital Transformation in Energy</span>
+                  </font>
+                  <br>
+                  <font id="titlishunder" style="margin-bottom: 0; background: -webkit-linear-gradient(#00A0B4, #007878); -webkit-background-clip: text;-webkit-text-fill-color: transparent;">
+                    <span>28 Jan, 2021 | 3:30 PM</span>
+                  </font>
+                </h3>
+              </div>
             </div>
-          </div>
           </div>
         </div>
       </section>
 
-<!--      <section id="section-fun-facts" class="anigrad text-light greyback" style="padding:15vh 0 10vh 0;background:-webkit-linear-gradient(315deg,#000000,#191919, #333333);">
+      <!--      <section id="section-fun-facts" class="anigrad text-light greyback" style="padding:15vh 0 10vh 0;background:-webkit-linear-gradient(315deg,#000000,#191919, #333333);">
         <div class="container" style="margin-top:-7vh;margin-bottom:-7vh;">
           <div class="row">
             <div class="col-md-3">
@@ -410,38 +419,54 @@
         </div>
       </section>-->
 
-              <section id="section-countdown" aria-label="section" class="gradient-to-right pt40 pb40">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-10 offset-md-1">
-                      <div class="spacer-single"></div>
-                      <div id="defaultCountdown"></div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-              <!-- section begin-->
+      <section id="section-countdown" aria-label="section" class="gradient-to-right pt40 pb40">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 offset-md-1">
+              <div class="spacer-single"></div>
+              <div id="defaultCountdown"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section begin-->
       <section id="section-about" data-bgimage="url(images-event/bg/4.jpg) top left no-repeat">
         <div class="wm wm-border light wow fadeInDown"><img src="images-event/sun.svg" style="position:absolute; max-width:10%; left: 45%; right: auto; margin: auto;"></div>
         <div class="container">
           <div class="row align-items-center">
 
             <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0s">
-              <h2 style="color: #333333;">Reinventing Tech Education</h2>
+              <h2 style="color: #333333;">Energy and Digitalization</h2>
               <p style="font-size:0.9em; line-height:1.4;">
-              Deep tech such as artificial intelligence, machine learning, robotics, big data, blockchain, advanced material science are changing the way we see and experience the world. Increasing adoption of these technologies also comes at a time when massive clean energy transition is underway. Recent profound changes in the way we produce, store and distribute energy, requires new set of technologies, policy framework, market design, business models, financial instruments and infrastructure to enable the transition and decarbonize the world. New developments in technology promise creation of a green, digitalized, decentralized and sustainable world. </p>
-              <p style="font-size:0.9em; line-height:1.4;"><span class="id-color"><b>Plaksha Centre for Clean Energy (PCCE)</b></span> has been working at the confluence of interdisciplinary education, research and innovation, entrepreneurship and public-private partnership to champion efforts towards energy transition and global decarbonization.
+                Deep tech such as artificial intelligence, machine learning, robotics, big data,
+                blockchain, advanced material science are changing the way we see and
+                experience the world. Increasing adoption of these technologies also comes at
+                a time when massive clean energy transition is underway. Recent profound
+                changes in the way we produce, store and distribute energy, requires new set
+                of technologies, policy framework, market design, business models, financial
+                instruments and infrastructure to enable the transition and decarbonize the
+                world. New developments in technology promise creation of a green,
+                digitalized, decentralized and sustainable world.</p>
+              <p style="font-size:0.9em; line-height:1.4;">The global conference on &#39;Digital Transformation in Energy&#39; will bring together
+                entrepreneurs, leaders and pioneers of cutting-edge technology adoption in
+                the clean energy sector on a common platform.</p>
+              <p style="font-size:0.9em; line-height:1.4;">This marks the beginning of a series of forums to discuss trends, focus areas
+                and ways to advance industry-academia-public sector collaboration while
+                bringing inspirational stories from clean energy entrepreneurs. As we take
+                major strides to build the <span class="id-color"><b>Centre for Clean Energy</b></span> at Plaksha, we envision that
+                these exchanges will further evolve as a powerful feedback loop to align the
+                academic programs and research with the real-world challenges of the sector.
               </p>
 
               <div class="spacer10"></div>
 
-              <a href="http://www.plaksha.org?utm_source=Infinity&utm_medium=Infinity%20website&utm_campaign=Infinity%202020" target="_blank" class="btn-custom font-weight-bold text-white sm-mb-30">About Plaksha</a>
+              <a href="https://drive.google.com/file/d/1VIQ6w0CM206HY0jaZzi2SdsVqlzzwtKT/view?usp=sharing" target="_blank" class="btn-custom font-weight-bold text-white sm-mb-30">About Plaksha Center for Clean Energy (PCCE)</a>
             </div>
 
             <div class="col-lg-6 mb-sm-30 text-center wow fadeInRight">
               <div class="spacer-double"></div>
               <div class="de-images">
-                <img class="di-small wow fadeIn" id="overlayimage" src="images-event/misc/speaker16by9.jpg" alt="" />
+                <!--<img class="di-small wow fadeIn" id="overlayimage" src="images-event/misc/speaker16by9.jpg" alt="" />-->
                 <img class="di-small-2" id="overlayimage2" src="images-event/misc/project16by9.jpg" alt="" />
                 <div class="img-fluid wow fadeInRight embed-responsive embed-responsive-4by4 mbl-video" st>
                   <a class="button" href='javascript:void();' id="play-button"><i class="fa fa-play-circle-o fa-4x centered"></i></a>
@@ -462,24 +487,24 @@
       <div class="container text-center">
         <div class="row">
           <div class="col-md-12 text-center">
-          <div class="col-md-6 offset-md-3 text-center wow fadeInUp">
-            <h1 style="color:#333333;">Four exciting tracks</h1>
-            <div class="separator"><span><i class="fa fa-square"></i></span></div>
-          </div>
-          <div class="col-md-12 text-center wow fadeInUp">
-            <div class="col-md-4 text-center wow fadeInUp">
-            <img src="images-event/logo/Advanced.png" alt="" class="grey-hover" style="max-width:35vh; padding:20px 0px 20px 0px;">
-          </div>
-          <div class="col-md-4 text-center wow fadeInUp">
-            <img src="images-event/logo/Deep.png" alt="" class="grey-hover" style="max-width:35vh; padding:20px 0px 20px 0px;">
-          </div>
-            <div class="col-md-4 text-center wow fadeInUp">
-            <img src="images-event/logo/Energy.png" alt="" class="grey-hover" style="max-width:35vh; padding:20px 0px 20px 0px;">
-          </div>
+            <div class="col-md-6 offset-md-3 text-center wow fadeInUp">
+              <h1 style="color:#333333;">Three exciting themes</h1>
+              <div class="separator"><span><i class="fa fa-square"></i></span></div>
+            </div>
+            <div class="col-md-12 text-center wow fadeInUp">
+              <div class="col-md-4 text-center wow fadeInUp">
+                <img src="images-event/logo/Advanced.png" alt="" class="grey-hover" style="max-width:35vh; padding:20px 0px 20px 0px;">
+              </div>
+              <div class="col-md-4 text-center wow fadeInUp">
+                <img src="images-event/logo/Deep.png" alt="" class="grey-hover" style="max-width:35vh; padding:20px 0px 20px 0px;">
+              </div>
+              <div class="col-md-4 text-center wow fadeInUp">
+                <img src="images-event/logo/Energy.png" alt="" class="grey-hover" style="max-width:35vh; padding:20px 0px 20px 0px;">
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </section>
 
     <!-- section close -->
@@ -488,7 +513,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6 offset-md-3 text-center wow fadeInUp">
-            <h1>Thought leaders from across the globe</h1>
+            <h1>Entrepreneurs, Leaders and Industry Champions Across the domain</h1>
             <div class="separator"><span><i class="fa fa-square" style="color:#FFFFFF;"></i></span></div>
             <div class="spacer-single"></div>
           </div>
@@ -886,7 +911,7 @@
 
           <!-- Modal Header -->
           <div class="modal-header" style="white-space: wrap; border: 0; padding-top: 0;">
-            <h4 style="color: #ffffff; padding-top:70px; margin-left: 45px; text-align: center; font-weight:normal;">Unravel the Future of Technology Education!</h4>
+            <h4 style="color: #ffffff; padding-top:70px; margin-left: 45px; text-align: center; font-weight:normal;">Experience leaders and industry champions in Clean Energy Space during 3-hour virtual event!</h4>
             <img class="modal-title" src="images-event/topright.png" style="max-height: 7vh; position: absolute; padding-top: 10px;">
             <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
 
@@ -895,7 +920,8 @@
 
           <!-- Modal footer -->
           <div class="modal-footer" style="margin-top: 0; border: 0; padding-top: 5px;">
-            <button onclick="popupclose();" href="https://us02web.zoom.us/webinar/register/WN_-iIfP0yuSNSI7pZ5jBdfmw" class="btn" style="font-family: 'Open Sans'; opacity: 1; padding: 8px 20px 8px 20px; background: #007878; color: #ffffff; margin: auto; display: inline-block; letter-spacing: 3px; font-size: 14px; font-weight: normal; line-height: 1.428571429; text-align: center; white-space: nowrap; vertical-align: middle; cursor: pointer; border: 1px solid transparent; border-radius: 0px;">
+            <button onclick="popupclose();" href="https://us02web.zoom.us/webinar/register/WN_-iIfP0yuSNSI7pZ5jBdfmw" class="btn"
+              style="font-family: 'Open Sans'; opacity: 1; padding: 8px 20px 8px 20px; background: #007878; color: #ffffff; margin: auto; display: inline-block; letter-spacing: 3px; font-size: 14px; font-weight: normal; line-height: 1.428571429; text-align: center; white-space: nowrap; vertical-align: middle; cursor: pointer; border: 1px solid transparent; border-radius: 0px;">
               REGISTER NOW
             </button>
           </div>
@@ -939,217 +965,160 @@
               <div class="de_tab_content text-left">
 
                 <div id="tab1" class="tab_single_content" style="background-size: cover; display: block;">
-                                        <div class="row" style="background-size: cover;">
-                                            <div class="col-md-12" style="background-size: cover;">
+                  <div class="row" style="background-size: cover;">
+                    <div class="col-md-12" style="background-size: cover;">
 
-                                                <div class="schedule-listing" style="background-size: cover;">
-                                                  <h1 style="color: #333333; text-align: left;">Opening Session</h1>
-                                                  <hr>
-                                                    <div class="schedule-item" style="background-size: cover;">
-                                                        <div class="sc-time" style="background-size: cover;">03:30 – 03:40 PM IST</div>
-                                                        <div class="sc-pic" style="background-size: cover;">
-                                                            <img src="images-event/team/1.jpg" class="img-circle" alt="">
-                                                        </div>
-                                                        <div class="sc-name" style="background-size: cover;">
-                                                            <h4>Manas Fuloria</h4>
-                                                            <span>Founder and Trustee, Plaksha</span>
-                                                        </div>
-                                                        <div class="sc-info" style="background-size: cover;">
-                                                            <h3>Introductory Remark</h3>
-                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
-                                                        </div>
-                                                        <div class="clearfix" style="background-size: cover;"></div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="schedule-listing" style="background-size: cover;">
-                                                    <div class="schedule-item" style="background-size: cover;">
-                                                        <div class="sc-time" style="background-size: cover;">03:40 – 04:00 PM IST</div>
-                                                        <div class="sc-pic" style="background-size: cover;">
-                                                            <img src="images-event/team/2.jpg" class="img-circle" alt="">
-                                                        </div>
-                                                        <div class="sc-name" style="background-size: cover;">
-                                                            <h4>Gauri Singh</h4>
-                                                            <span>Deputy Director-General, IRENA</span>
-                                                        </div>
-                                                        <div class="sc-info" style="background-size: cover;">
-                                                            <h3>Keynote Address</h3>
-                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
-                                                        </div>
-                                                        <div class="clearfix" style="background-size: cover;"></div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="schedule-listing" style="background-size: cover;">
-                                                    <div class="schedule-item" style="background-size: cover;">
-                                                      <h1 style="color: #333333; text-align: left;">Stories of Change</h1>
-                                                      <hr>
-                                                        <div class="sc-time" style="background-size: cover;">04:00 – 04:20 PM IST</div>
-                                                        <div class="sc-pic" style="background-size: cover;">
-                                                            <img src="images-event/team/3.jpg" class="img-circle" alt="">
-                                                        </div>
-                                                        <div class="sc-name" style="background-size: cover;">
-                                                            <h4>Harish Hande</h4>
-                                                            <span>Founder &amp; Chairman, SELCO India</span>
-                                                        </div>
-                                                        <div class="sc-info" style="background-size: cover;">
-                                                            <h3>Building Rural India through Solar Energy </h3>
-                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
-                                                        </div>
-                                                        <div class="clearfix" style="background-size: cover;"></div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="schedule-listing" style="background-size: cover;">
-                                                    <div class="schedule-item" style="background-size: cover;">
-                                                        <div class="sc-time" style="background-size: cover;">04:20 – 04:40 PM IST</div>
-                                                        <div class="sc-pic" style="background-size: cover;">
-                                                            <img src="images-event/team/4.jpg" class="img-circle" alt="">
-                                                        </div>
-                                                        <div class="sc-name" style="background-size: cover;">
-                                                            <h4>Amit Gupta</h4>
-                                                            <span>Co-Founder &amp; CEO, Yulu</span>
-                                                        </div>
-                                                        <div class="sc-info" style="background-size: cover;">
-                                                            <h3>Making India an EV Hub</h3>
-                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
-                                                        </div>
-                                                        <div class="clearfix" style="background-size: cover;"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="schedule-listing" style="background-size: cover;">
-                                                    <div class="schedule-item" style="background-size: cover;">
-                                                        <div class="sc-time" style="background-size: cover;">04:40 – 05:00 PM IST</div>
-                                                        <div class="sc-pic" style="background-size: cover;">
-                                                            <img src="images-event/team/4.jpg" class="img-circle" alt="">
-                                                        </div>
-                                                        <div class="sc-name" style="background-size: cover;">
-                                                            <h4>Multiple Speakers</h4>
-                                                            <span>Moderated by <b>Shalini Sarin</b></span>
-                                                        </div>
-                                                        <div class="sc-info" style="background-size: cover;">
-                                                            <h3>Fireside Chat</h3>
-                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
-                                                        </div>
-                                                        <div class="clearfix" style="background-size: cover;"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="schedule-listing" style="background-size: cover;">
-                                                    <div class="schedule-item" style="background-size: cover;">
-                                                      <h1 style="color: #333333; text-align: left;">Digital Technology in Global Energy Transition</h1>
-                                                      <hr>
-                                                        <div class="sc-time" style="background-size: cover;">05:10 – 06:00 PM IST</div>
-                                                        <div class="sc-pic" style="background-size: cover;">
-                                                            <img src="images-event/team/4.jpg" class="img-circle" alt="">
-                                                        </div>
-                                                        <div class="sc-name" style="background-size: cover;">
-                                                            <h4>Multiple Speakers</h4>
-                                                            <span>Moderated by Devarajan Srinivasan<br>CTO, Poundra</span>
-                                                        </div>
-                                                        <div class="sc-info" style="background-size: cover;">
-                                                            <h3>Panel Discussion</h3>
-                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
-                                                        </div>
-                                                        <div class="clearfix" style="background-size: cover;"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="schedule-listing" style="background-size: cover;">
-                                                    <div class="schedule-item" style="background-size: cover;">
-                                                        <div class="sc-time" style="background-size: cover;">06:00 – 06:30 PM IST</div>
-                                                        <div class="sc-pic" style="background-size: cover;">
-                                                            <img src="images-event/team/4.jpg" class="img-circle" alt="">
-                                                        </div>
-                                                        <div class="sc-name" style="background-size: cover;">
-                                                            <h4>Devarajan Srinivasan</h4>
-                                                            <span>CTO, Poundra</span>
-                                                        </div>
-                                                        <div class="sc-info" style="background-size: cover;">
-                                                            <h3>Q&A Session </h3>
-                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
-                                                        </div>
-                                                        <div class="clearfix" style="background-size: cover;"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                <div id="tab2" class="tab_single_content">
-                  <section class="gradient-to-right text-light rounded" style="padding:40px 0 40px 0;">
-                    <div class="container">
-                      <div class="row align-items-center">
-                        <div class="col-lg-12 text-center">
-                          <h1 class="size-2 no-margin"><i class="fas fa-robot" style="font-size:130%"></i><br>Tinker. Create. Solve.</h1>
+                      <div class="schedule-listing" style="background-size: cover;">
+                        <h1 style="color: #333333; text-align: left;">Opening Session</h1>
+                        <br>
+                        <p class="col-md-6">Setting up context about Plaksha’s unique approach towards higher education through grand challenges approach. Role of technology in global energy transition and opportunities for India</p>
+                        <hr>
+                        <div class="schedule-item" style="background-size: cover;">
+                          <div class="sc-time" style="background-size: cover;">03:30 – 03:40 PM IST</div>
+                          <div class="sc-pic" style="background-size: cover;">
+                            <img src="images-event/team/1.jpg" class="img-circle" alt="">
+                          </div>
+                          <div class="sc-name" style="background-size: cover;">
+                            <h4>Manas Fuloria</h4>
+                            <span>Founder and Trustee, Plaksha</span>
+                          </div>
+                          <div class="sc-info" style="background-size: cover;">
+                            <h3>Introductory Remark</h3>
+                            <p>‎‎‎‎‎‎‎‎‎</p>
+                          </div>
+                          <div class="clearfix" style="background-size: cover;"></div>
                         </div>
-                        <div class="col-md-6 offset-md-3 text-center">
-                          <h4 style="padding-top:5px;">
-                            Oct 17 | 10:00 AM to 12:30 PM (IST)
-                            </h3>
+                      </div>
+
+                      <div class="schedule-listing" style="background-size: cover;">
+                        <div class="schedule-item" style="background-size: cover;">
+                          <div class="sc-time" style="background-size: cover;">03:40 – 04:00 PM IST</div>
+                          <div class="sc-pic" style="background-size: cover;">
+                            <img src="images-event/team/2.jpg" class="img-circle" alt="">
+                          </div>
+                          <div class="sc-name" style="background-size: cover;">
+                            <h4>Gauri Singh</h4>
+                            <span>Deputy Director-General, IRENA</span>
+                          </div>
+                          <div class="sc-info" style="background-size: cover;">
+                            <h3>Keynote Address</h3>
+                            <p>‎</p>
+                          </div>
+                          <div class="clearfix" style="background-size: cover;"></div>
                         </div>
-                        <div class="spacer-single"></div>
-                        <div class="col-md-6 offset-md-3 text-center">
-                          <h4 style="font-weight:normal; font-size:1em;">
-                            Tech-based solutions to real-life problems need more than academic prowess. This track focuses on the importance of design, entrepreneurship and social context in creating impactful solutions. Join if you identify yourself
-                            as a tinkerer, problem-solver, dreamer, creator or an innovator.
-                          </h4>
+                      </div>
+
+                      <div class="schedule-listing" style="background-size: cover;">
+                        <div class="schedule-item" style="background-size: cover;">
+                          <h1 style="color: #333333; text-align: left;">Stories of Change</h1>
+                          <br>
+                          <p class="col-md-6">Entrepreneurs sharing their exciting, inspiring journey and motivation behind changing lives and making world a better place, followed by a fireside chat</p>
+                          <hr>
+                          <div class="sc-time" style="background-size: cover;">04:00 – 04:20 PM IST</div>
+                          <div class="sc-pic" style="background-size: cover;">
+                            <img src="images-event/team/3.jpg" class="img-circle" alt="">
+                          </div>
+                          <div class="sc-name" style="background-size: cover;">
+                            <h4>Harish Hande</h4>
+                            <span>Founder &amp; Chairman, SELCO India</span>
+                          </div>
+                          <div class="sc-info" style="background-size: cover;">
+                            <h3>Building Rural India through Solar Energy </h3>
+                            <p>‎</p>
+                          </div>
+                          <div class="clearfix" style="background-size: cover;"></div>
+                        </div>
+                      </div>
+
+                      <div class="schedule-listing" style="background-size: cover;">
+                        <div class="schedule-item" style="background-size: cover;">
+                          <div class="sc-time" style="background-size: cover;">04:20 – 04:40 PM IST</div>
+                          <div class="sc-pic" style="background-size: cover;">
+                            <img src="images-event/team/4.jpg" class="img-circle" alt="">
+                          </div>
+                          <div class="sc-name" style="background-size: cover;">
+                            <h4>Amit Gupta</h4>
+                            <span>Co-Founder &amp; CEO, Yulu</span>
+                          </div>
+                          <div class="sc-info" style="background-size: cover;">
+                            <h3>Making India an EV Hub</h3>
+                            <p>‎</p>
+                          </div>
+                          <div class="clearfix" style="background-size: cover;"></div>
+                        </div>
+                      </div>
+                      <div class="schedule-listing" style="background-size: cover;">
+                        <div class="schedule-item" style="background-size: cover;">
+                          <div class="sc-time" style="background-size: cover;">04:40 – 05:00 PM IST</div>
+                          <div class="sc-pic" style="background-size: cover;">
+                            <img src="images-event/team/4.jpg" class="img-circle" alt="">
+                          </div>
+                          <div class="sc-name" style="background-size: cover;">
+                            <h4>Multiple Speakers</h4>
+                            <span>‎</span>
+                          </div>
+                          <div class="sc-info" style="background-size: cover;">
+                            <h3>Fireside Chat</h3>
+                            <p>Moderated by Shalini Sarin, Co-Founder Elektromobilitat joined by Harish Hande, Amit Gupta</p>
+                          </div>
+                          <div class="clearfix" style="background-size: cover;"></div>
+                        </div>
+                      </div>
+                      <div class="schedule-listing" style="background-size: cover;">
+                        <div class="schedule-item" style="background-size: cover;">
+                          <h1 style="color: #333333; text-align: left;">Digital Technology in Global Energy Transition</h1>
+                          <br>
+                          <p class="col-md-6">Panel discussion with industry leaders discussing role of digital technology in
+                            global energy transition, global and national opportunities and challenges in
+                            adoption</p>
+
+                          <hr>
+                          <div class="sc-time" style="background-size: cover;">05:10 – 06:00 PM IST</div>
+                          <div class="sc-pic" style="background-size: cover;">
+                            <img src="images-event/team/4.jpg" class="img-circle" alt="">
+                          </div>
+                          <div class="sc-name" style="background-size: cover;">
+                            <h4>Multiple Speakers</h4>
+                            <span>‎</span>
+                          </div>
+                          <div class="sc-info" style="background-size: cover;">
+                            <h3>Panel Discussion</h3>
+                            <p>Moderated by Devarajan Srinivasan, CTO, Poundra joined by
+                                Manoj Kohli
+                                (Country Head Softbank India),
+                                Frederic Godemel
+                                (SVP Schneider Electric) and
+                                Praveer Sinha
+                                (CEO, Tata Power)</p>
+                          </div>
+                          <div class="clearfix" style="background-size: cover;"></div>
+                        </div>
+                      </div>
+                      <div class="schedule-listing" style="background-size: cover;">
+                        <div class="schedule-item" style="background-size: cover;">
+                          <div class="sc-time" style="background-size: cover;">06:00 – 06:30 PM IST</div>
+                          <div class="sc-pic" style="background-size: cover;">
+                            <img src="images-event/team/4.jpg" class="img-circle" alt="">
+                          </div>
+                          <div class="sc-name" style="background-size: cover;">
+                            <h4>Devarajan Srinivasan</h4>
+                            <span>CTO, Poundra</span>
+                          </div>
+                          <div class="sc-info" style="background-size: cover;">
+                            <h3>Q&A Session </h3>
+                            <p>‎</p>
+                          </div>
+                          <div class="clearfix" style="background-size: cover;"></div>
                         </div>
                       </div>
                     </div>
-                  </section>
+                  </div>
                 </div>
 
-                <div id="tab3" class="tab_single_content">
-                  <section class="gradient-to-right text-light rounded" style="padding:40px 0 40px 0;">
-                    <div class="container">
-                      <div class="row align-items-center">
-                        <div class="col-lg-12 text-center">
-                          <h1 class="size-2 no-margin"><i class="fas fa-sitemap" style="font-size:130%"></i><br>Tech Leaders for Tomorrow</h1>
-                        </div>
-                        <div class="col-md-6 offset-md-3 text-center">
-                          <h4 style="padding-top:5px;">
-                            Oct 17 | 6:00 PM to 8:45 PM (IST)
-                          </h4>
-                        </div>
-                        <div class="spacer-single"></div>
-                        <div class="col-md-6 offset-md-3 text-center">
-                          <h4 style="font-weight:normal; font-size:1em;">
-                            This track brings together tech leaders and entrepreneurs of today who discuss emerging, cutting-edge technologies, how to lead an organization and build a start-up. Recommended for those who are exploring career options,
-                            building careers or creating their own ventures.
-                          </h4>
-                        </div>
-                      </div>
-                    </div>
-                  </section>
-                </div>
-                <div id="tab4" class="tab_single_content">
-                  <section class="gradient-to-right text-light rounded" style="padding:40px 0 40px 0;" style="">
-                    <div class="container">
-                      <div class="row align-items-center">
-                        <div class="col-lg-12 text-center">
-                          <h1 class="size-2 no-margin"><i class="fas fa-bolt" style="font-size:130%"></i><br>Stories which inspire!</h1>
-                        </div>
-                        <div class="col-md-6 offset-md-3 text-center">
-                          <h4 style="padding-top:5px;">
-                            Oct 18 | 5:30 PM to 8:00 PM (IST)
-                          </h4>
-                        </div>
-                        <div class="spacer-single"></div>
-                        <div class="col-md-6 offset-md-3 text-center">
-                          <h4 style="font-weight:normal; font-size:1em;">
-                            Hear outstanding individuals share their journey of grit and determination. Inspirational stories ranging from building institutions which put students in the forefront, to innovatively working towards a more inclusive
-                            world. For anyone who believes technology education needs to be reimagined, wants to use technology to create an impact or become a tech leader.
-                          </h4>
-                        </div>
-                      </div>
-                    </div>
-                  </section>
-                </div>
+                <div class="spacer-single"></div>
               </div>
-
-              <div class="spacer-single"></div>
             </div>
           </div>
-        </div>
     </section>
     <!--section close -->
     <!-- section close -->
@@ -1309,22 +1278,22 @@
 
 </section> -->
 
-  <section id="call-to-action" class="text-light call-to-action" style="background:-webkit-linear-gradient(315deg,#7289DA,#3997c7, #00A4B4);" aria-label="cta" style="background-size: cover;" onmousemove="showbutton()" ontouchstart="showbutton()">
-    <div class="container" style="background-size: cover;">
-      <div class="row align-items-center" style="background-size: cover;">
-        <div class="col-lg-8 col-md-7" style="background-size: cover;">
-          <h3 class="size-2 no-margin">Be a part of the Conversation!</h3>
-        </div>
+    <section id="call-to-action" class="text-light call-to-action" style="background:-webkit-linear-gradient(315deg,#7289DA,#3997c7, #00A4B4);" aria-label="cta" style="background-size: cover;" onmousemove="showbutton()" ontouchstart="showbutton()">
+      <div class="container" style="background-size: cover;">
+        <div class="row align-items-center" style="background-size: cover;">
+          <div class="col-lg-8 col-md-7" style="background-size: cover;">
+            <h3 class="size-2 no-margin">Be a part of the Conversation!</h3>
+          </div>
 
-        <div class="col-lg-4 col-md-5 text-right" id="brochure" style="background-size: cover;">
-          <a href="https://discord.gg/kzwpHPf" class="btn-custom button-glow"><i class="fab fa-discord"></i>&nbsp;JOIN THE DISCORD SERVER</a>
+          <div class="col-lg-4 col-md-5 text-right" id="brochure" style="background-size: cover;">
+            <a href="https://discord.gg/kzwpHPf" class="btn-custom button-glow"><i class="fab fa-discord"></i>&nbsp;JOIN THE DISCORD SERVER</a>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
 
-      <!--section begin
+    <!--section begin
       <section id="section-sponsors" data-bgimage="url(images-event/bg/5.jpg) top right no-repeat">
         <div class="wm wm-border light wow fadeInDown"><img src="images-event/sun.svg" style="position:absolute; max-width:10%; left: 45%; right: auto; margin: auto;"></div>
         <div class="container">
@@ -1351,34 +1320,34 @@
       section close -->
 
 
-  <!-- footer begin -->
-  <footer class="style-2" onmousemove="showbutton()" ontouchstart="showbutton()">
-    <div class="container" style="margin-top:-1%;">
-      <div class="row align-items-middle text-center">
-        <div class="col-md-3" style="margin-bottom:-5%;">
-          <img src="images-event/panda.png" class="logo-small" alt="" style="width:60%;"><br>
-        </div>
+    <!-- footer begin -->
+    <footer class="style-2" onmousemove="showbutton()" ontouchstart="showbutton()">
+      <div class="container" style="margin-top:-1%;">
+        <div class="row align-items-middle text-center">
+          <div class="col-md-3" style="margin-bottom:-5%;">
+            <img src="images-event/panda.png" class="logo-small" alt="" style="width:60%;"><br>
+          </div>
 
-        <div class="col-md-6">
-          &copy; Copyright 2021 | <span style="color:#00A0B4;">Plaksha <i class="fas fa-atom"></i> Center for Clean Energy </span><br>
-          <b>Write to us at </b><a href="mailto:clean.energy@plaksha.org" style="color:#00A0B4;">clean.energy@plaksha.org</a><br>
-          <b><a target="_blank" href="https://drive.google.com/file/d/1nul41zUtcR8H-PY38bQEp6LlyvCOrxh8/view?usp=sharing" style="color:#00A0B4; font-size:0.8em;">Privacy Policy</a></b>
-        </div>
+          <div class="col-md-6">
+            &copy; Copyright 2021 | <span style="color:#00A0B4;">Plaksha <i class="fas fa-atom"></i> Center for Clean Energy </span><br>
+            <b>Write to us at </b><a href="mailto:clean.energy@plaksha.org" style="color:#00A0B4;">clean.energy@plaksha.org</a><br>
+            <b><a target="_blank" href="https://drive.google.com/file/d/1nul41zUtcR8H-PY38bQEp6LlyvCOrxh8/view?usp=sharing" style="color:#00A0B4; font-size:0.8em;">Privacy Policy</a></b>
+          </div>
 
-        <div class="col-md-3 text-right">
-          <div class="social-icons">
-            <a target="_blank" href="https://twitter.com/PlakshaUniv"><i class="fa fa-twitter fa-lg"></i></a>
-            <a target="_blank" href="https://www.facebook.com/plakshauniversity"><i class="fa fa-facebook fa-lg"></i></a>
-            <a target="_blank" href="https://www.instagram.com/plaksha_university/"><i class="fa fa-instagram fa-lg"></i></a>
-            <a target="_blank" href="https://www.plaksha.org"><i class="fa fa-globe fa-lg"></i></a>
+          <div class="col-md-3 text-right">
+            <div class="social-icons">
+              <a target="_blank" href="https://twitter.com/PlakshaUniv"><i class="fa fa-twitter fa-lg"></i></a>
+              <a target="_blank" href="https://www.facebook.com/plakshauniversity"><i class="fa fa-facebook fa-lg"></i></a>
+              <a target="_blank" href="https://www.instagram.com/plaksha_university/"><i class="fa fa-instagram fa-lg"></i></a>
+              <a target="_blank" href="https://www.plaksha.org"><i class="fa fa-globe fa-lg"></i></a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <a href="https://us02web.zoom.us/webinar/register/WN_-iIfP0yuSNSI7pZ5jBdfmw" target="_blank" id="register-click" class="custom-1"><b style="color:white;z-index:200;" onclick="registerclick();">REGISTER NOW</b></a>
-  </footer>
-  <!-- footer close -->
+      <a href="https://us02web.zoom.us/webinar/register/WN_-iIfP0yuSNSI7pZ5jBdfmw" target="_blank" id="register-click" class="custom-1"><b style="color:white;z-index:200;" onclick="registerclick();">REGISTER NOW</b></a>
+    </footer>
+    <!-- footer close -->
   </div>
   </div>
 
@@ -1411,12 +1380,13 @@
     function hidebutton() {
       document.getElementById('register-click').style.visibility = "hidden";
     }
+
     function ctext() {
-   var window_weight = $(window).width();
-   if (window_weight <= 768) {
-             document.getElementById('maintext').style.textAlign = 'center';
-             $('maintext').addClass("text-center");
-   }
+      var window_weight = $(window).width();
+      if (window_weight <= 768) {
+        document.getElementById('maintext').style.textAlign = 'center';
+        $('maintext').addClass("text-center");
+      }
     }
 
     function showbutton() {
@@ -1471,14 +1441,17 @@
     function viewbook() {
       document.getElementById('flipbook').style.display = 'block';
     }
-    function registerclick(){
+
+    function registerclick() {
       window.open('https://us02web.zoom.us/webinar/register/WN_-iIfP0yuSNSI7pZ5jBdfmw', '_blank');
     }
+
     function multipleregister() {
       document.getElementById('submitbutton').style.display = 'none';
-      setTimeout(function(){document.getElementById('submitbutton').style.display = 'inline';}, 4000);
+      setTimeout(function() {
+        document.getElementById('submitbutton').style.display = 'inline';
+      }, 4000);
     }
-
   </script>
   <script>
     var myIndex = 0;
@@ -1491,8 +1464,10 @@
         x[i].style.display = "none";
       }
       myIndex++;
-      if (myIndex > x.length) {myIndex = 1}
-      x[myIndex-1].style.display = "block";
+      if (myIndex > x.length) {
+        myIndex = 1
+      }
+      x[myIndex - 1].style.display = "block";
       setTimeout(carousel, 3000); // Change image every 2 seconds
     }
   </script>
