@@ -6403,9 +6403,9 @@ transition:.5s;
 }
 .schedule-item .sc-time {
 	font-weight:bold;
-	width: 160px;
-	padding-top: 25px;
-	font-size:14px;
+	width: 170px;
+	padding-top: 30px;
+	font-size:16px;
 }
 .schedule-item .sc-pic {
 	width: 120px;
