@@ -6405,6 +6405,12 @@ transition:.5s;
 	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff', GradientType=1);
 }
 
+.schedule-heading {
+	background: linear-gradient(to left, #004646 , #007350);
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .schedule-item>div {
 	float: left;
 }
