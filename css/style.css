@@ -6398,6 +6398,13 @@ transition:.5s;
 	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff', GradientType=1);
 }
 
+.opening-session {
+	background: -moz-linear-gradient(left, rgba(0, 70, 70, 0.4) 0%, rgba(0, 70, 70, 0.05) 50%, rgba(0, 70, 70, 0.4) 100%);
+	background: -webkit-linear-gradient(left, rgba(0, 70, 70, 0.4) 0%, rgba(0, 70, 70, 0.05) 50%, rgba(0, 70, 70, 0.4) 100%);
+	background: linear-gradient(to right, rgba(0, 70, 70, 0.4) 0%, rgba(0, 70, 70, 0.05) 50%, rgba(0, 70, 70, 0.4) 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff', GradientType=1);
+}
+
 .schedule-item>div {
 	float: left;
 }
@@ -6406,6 +6413,9 @@ transition:.5s;
 	width: 170px;
 	padding-top: 30px;
 	font-size:16px;
+	background: linear-gradient(to left, #004646 , #007350);
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .schedule-item .sc-pic {
 	width: 120px;
