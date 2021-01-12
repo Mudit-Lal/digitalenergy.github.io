@@ -73,6 +73,7 @@
         document.getElementById('countclock').style.fontSize = '9em';
         document.getElementById('countclock').style.opacity = '0.2';
         document.getElementById('titlishunderdate').style.left = '-27%';
+        document.getElementById('titlishunderdate').style.opacity = '1';
       });
     }
     if (window_weight >= 768) {
@@ -470,7 +471,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
               <div class="spacer10"></div>
 
-              <button href="https://drive.google.com/file/d/1VIQ6w0CM206HY0jaZzi2SdsVqlzzwtKT/view?usp=sharing" target="_blank" class="btn-pcce">About Plaksha Center<m class="btn-pcce"></m><br>for Clean Energy (PCCE)</button>
+              <button href="https://drive.google.com/file/d/1VIQ6w0CM206HY0jaZzi2SdsVqlzzwtKT/view?usp=sharing" target="_blank" class="btn-pcce" onclick="pptclick();">About Plaksha Center<m class="btn-pcce"></m><br>for Clean Energy (PCCE)</button>
             </div>
 
             <div class="col-lg-6 mb-sm-30 text-center wow fadeInRight">
@@ -1436,6 +1437,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     function registerclick() {
       window.open('https://us02web.zoom.us/webinar/register/WN_-iIfP0yuSNSI7pZ5jBdfmw', '_blank');
     }
+
+    function pptclick() {
+      window.open('https://drive.google.com/file/d/1VIQ6w0CM206HY0jaZzi2SdsVqlzzwtKT/view?usp=sharing', '_blank');
+    }
+
 
     function multipleregister() {
       document.getElementById('submitbutton').style.display = 'none';
